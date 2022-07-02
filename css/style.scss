@@ -1,1 +1,19 @@
 @import "_null.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.wrapper {
+    font-family: 'Inter', 'sans-serif';
+}
+
+// Header
