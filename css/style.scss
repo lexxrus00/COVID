@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 [class*="__container"] {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .main {
@@ -17,3 +18,101 @@
 }
 
 // Header
+
+.header {
+
+    background: #58C3F0;
+
+    // .header__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+
+    // .header__logo
+
+    &__logo {
+        flex: 1 1 auto;
+    }
+
+    // .header__nav
+
+    &__nav {
+        padding: 23px 0px 0px 0px;
+
+        @media(max-width: 750px) {
+            display: none;
+        }
+    }
+
+    // .header__links
+
+    &__links {
+        display: flex;
+        gap: 35px;
+    }
+
+    // .header__link
+
+    &__link {
+        font-weight: 600;
+        font-size: 18px;
+
+        a {
+            color: #F3F3F3;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // BURGER
+    .burger {
+        position: relative;
+        transform: translateY(5px);
+        width: 35px;
+        height: 20px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+
+        background: none;
+
+        span {
+            width: 100%;
+            height: 2px;
+            background: #F3F3F3;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #F3F3F3;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #F3F3F3;
+        }
+
+        @media(max-width:750px) {
+            display: flex;
+        }
+    }
+
+
+}
