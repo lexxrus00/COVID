@@ -263,3 +263,89 @@ html {
   background: #FF4F5A;
   border-radius: 8px;
 }
+
+.stats {
+  background: #58C3F0;
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+
+.stats__title {
+  font-weight: 600;
+  font-size: 44px;
+  color: #F3F3F3;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 400px) {
+  .stats__title {
+    font-size: 26px;
+  }
+}
+
+.stats__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #F3F3F3;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 400px) {
+  .stats__subtitle {
+    font-size: 16px;
+  }
+}
+
+.stats__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 200px;
+}
+
+@media (max-width: 730px) {
+  .stats__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.stats__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats__icon {
+  margin-bottom: 16px;
+}
+
+.stats__numbers {
+  font-weight: 700;
+  font-size: 30px;
+  color: #F3F3F3;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.stats__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #F3F3F3;
+}
