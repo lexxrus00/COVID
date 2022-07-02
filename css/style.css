@@ -349,3 +349,102 @@ html {
   font-size: 16px;
   color: #F3F3F3;
 }
+
+.covid-info {
+  background: #F5F5F5;
+}
+
+.covid-info__container {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 86px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .covid-info__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.covid-info__image img {
+  max-width: 100%;
+}
+
+.block-text__header {
+  margin-bottom: 36px;
+}
+
+.block-text__title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.block-text__info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 542px;
+}
+
+@media (max-width: 400px) {
+  .block-text__info {
+    line-height: 30px;
+  }
+}
+
+.block-text__list-item {
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.block-text__list-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.block-text__list-item::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/list-item__icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+@media (max-width: 400px) {
+  .block-text__list-item::before {
+    top: 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .block-text__list-item {
+    line-height: 30px;
+  }
+}
+
+.block-text .btn {
+  text-align: center;
+  margin-top: 32px;
+}
