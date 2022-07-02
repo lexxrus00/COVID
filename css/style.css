@@ -63,18 +63,9 @@ html {
 }
 
 [class*="__container"] {
-  max-width: 1230px;
+  max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 
 .wrapper {
@@ -106,7 +97,7 @@ html {
   padding: 23px 0px 0px 0px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 991.98px) {
   .header__nav {
     display: none;
   }
@@ -172,10 +163,103 @@ html {
   background: #F3F3F3;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 991.98px) {
   .header .burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.stay-safe__container {
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 991.98px) {
+  .stay-safe__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .stay-safe__container {
+    padding-top: 40px;
+  }
+}
+
+.stay-safe__title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #FF4F5A;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1020px) {
+  .stay-safe__title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  .stay-safe__title {
+    font-size: 30px;
+  }
+}
+
+.stay-safe__subtitle {
+  font-size: 30px;
+  font-weight: 500;
+  color: #FF4F5AE5;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 500px) {
+  .stay-safe__subtitle {
+    font-size: 20px;
+  }
+}
+
+.stay-safe__info {
+  max-width: 450px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FF4F5ABF;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.stay-safe__image img {
+  max-width: 100%;
+}
+
+.btn {
+  display: block;
+  max-width: 130px;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #FF4F5A;
+  border-radius: 8px;
 }

@@ -3,15 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 [class*="__container"] {
-    max-width: 1230px;
+    max-width: 1430px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.main {
-    display: flex;
-    flex: 1 1 auto;
-}
+
 
 .wrapper {
     font-family: 'Inter', 'sans-serif';
@@ -46,7 +43,7 @@
     &__nav {
         padding: 23px 0px 0px 0px;
 
-        @media(max-width: 750px) {
+        @media(max-width: 991.98px) {
             display: none;
         }
     }
@@ -109,10 +106,114 @@
             background: #F3F3F3;
         }
 
-        @media(max-width:750px) {
+        @media(max-width:991.98px) {
             display: flex;
         }
     }
+
+
+}
+
+// Main
+.main {
+    flex: 1 1 auto
+}
+
+// Stay Safe
+
+.stay-safe {
+
+    // .stay-safe__container
+
+    &__container {
+        padding-top: 90px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width: 991.98px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        @media(max-width: 500px) {
+            padding-top: 40px;
+        }
+
+    }
+
+    // .stay-safe__text
+
+    &__text {}
+
+    // .stay-safe__title
+
+    &__title {
+        font-size: 60px;
+        font-weight: 600;
+        color: #FF4F5A;
+
+        margin-bottom: 16px;
+
+        @media(max-width:1020px) {
+            font-size: 45px;
+        }
+
+        @media(max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+
+    // .stay-safe__subtitle
+
+    &__subtitle {
+        font-size: 30px;
+        font-weight: 500;
+        color: #FF4F5AE5;
+
+        margin-bottom: 16px;
+
+        @media(max-width: 500px) {
+            font-size: 20px;
+        }
+    }
+
+    // .stay-safe__info
+
+    &__info {
+        max-width: 450px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #FF4F5ABF;
+        line-height: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    // .stay-safe__image
+
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
+// BUTTON
+.btn {
+    display: block;
+    max-width: 130px;
+
+    padding: 8px 14px;
+
+    font-size: 14px;
+    color: #FFFFFF;
+
+    background: #FF4F5A;
+    border-radius: 8px;
 
 
 }
