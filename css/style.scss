@@ -424,3 +424,63 @@
         margin-top: 32px;
     }
 }
+
+// RISK
+
+.risk {
+
+    // .risk__container
+
+    &__container {
+        padding-top: 75px;
+        display: flex;
+        justify-content: center;
+
+        gap: 40px;
+        align-items: center;
+
+        @media(max-width: 991.98px) {
+            flex-direction: column;
+
+        }
+    }
+
+    // .risk__block-text
+
+    &__block-text {}
+
+    // .risk__image
+
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.block-text {
+
+    // .block-text__header
+
+    &__header {}
+
+    // .block-text__title
+
+    &__title {}
+
+    // .block-text__info
+
+    &__info {}
+
+    // .block-text__footer
+
+    &__footer {}
+
+    // .block-text__list
+
+    &__list {}
+
+    // .block-text__list-item
+
+    &__list-item {}
+}
