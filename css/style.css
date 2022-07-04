@@ -642,3 +642,66 @@ html {
   line-height: 18px;
   max-width: 222px;
 }
+
+.symtoms {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(88, 195, 240, 0.71)), to(rgba(88, 195, 240, 0.41)));
+  background: -webkit-linear-gradient(top, rgba(88, 195, 240, 0.71) 0%, rgba(88, 195, 240, 0.41) 100%);
+  background: -o-linear-gradient(top, rgba(88, 195, 240, 0.71) 0%, rgba(88, 195, 240, 0.41) 100%);
+  background: linear-gradient(180deg, rgba(88, 195, 240, 0.71) 0%, rgba(88, 195, 240, 0.41) 100%);
+}
+
+.symtoms__container {
+  padding-top: 27px;
+  padding-bottom: 40px;
+}
+
+.symtoms__title {
+  color: #000000;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.symtoms__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.symtoms__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35px;
+}
+
+.symtoms__item {
+  max-width: 539px;
+  background: #F3F3F3;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 27px;
+  padding: 40px 42px 40px 42px;
+}
+
+.symtoms__upper-text {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.symtoms__bottom-text {
+  font-weight: 400;
+  font-size: 14px;
+}

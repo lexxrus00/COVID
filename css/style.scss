@@ -633,29 +633,84 @@
     &__block-text {}
 }
 
-.block-text {
+// SYMTOMS
 
-    // .block-text__header
+.symtoms {
 
-    &__header {}
+    background: linear-gradient(180deg, rgba(88, 195, 240, 0.71) 0%, rgba(88, 195, 240, 0.41) 100%);
 
-    // .block-text__title
+    // .symtoms__container
 
-    &__title {}
+    &__container {
+        padding-top: 27px;
+        padding-bottom: 40px;
+    }
 
-    // .block-text__info
+    // .symtoms__title
 
-    &__info {}
+    &__title {
+        color: #000000;
+        font-weight: 600;
+        font-size: 24px;
 
-    // .block-text__footer
+        text-align: center;
+    }
 
-    &__footer {}
+    // .symtoms__subtitle
 
-    // .block-text__list
+    &__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
 
-    &__list {}
+    }
 
-    // .block-text__list-item
+    // .symtoms__items
 
-    &__list-item {}
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+
+        margin-top: 35px;
+    }
+
+    // .symtoms__item
+
+    &__item {
+        max-width: 539px;
+        background: #F3F3F3;
+        border-radius: 8px;
+
+        display: flex;
+        align-items: flex-start;
+        gap: 27px;
+        padding: 40px 42px 40px 42px;
+
+    }
+
+    // .symtoms__logo
+
+    &__logo {}
+
+    // .symtoms__text
+
+    &__text {}
+
+    // .symtoms__upper-text
+
+    &__upper-text {
+        font-weight: 600;
+        font-size: 24px;
+
+        margin-bottom: 12px;
+    }
+
+    // .symtoms__bottom-text
+
+    &__bottom-text {
+        font-weight: 400;
+        font-size: 14px;
+    }
 }
